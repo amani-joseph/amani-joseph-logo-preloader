@@ -1,0 +1,45 @@
+/** @format */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("./gradient\ bg@2x.svg");
+}
+#logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#logo path:nth-child(1) {
+	stroke-dasharray: 903px;
+	stroke-dashoffset: 903px;
+	animation: line-animate 5s ease forwards;
+}
+
+#logo path:nth-child(2) {
+	stroke-dasharray: 1079px;
+	stroke-dashoffset: 1079px;
+}
+
+#logo path:nth-child(3) {
+	stroke-dasharray: 1271px;
+	stroke-dashoffset: 1271px;
+}
+
+#logo path:nth-child(4) {
+	stroke-dasharray: 795px;
+	stroke-dashoffset: 795px;
+}
+
+@keyframes line-animate {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
